@@ -1,3 +1,9 @@
+type Message =
+    record {
+        from: principal;
+        content: text;
+    };
 service : {
-    "greet": (text) -> (text) query;
+    "get_messages": () -> (text) vec Message;
+    "send_message": (content text)
 }
