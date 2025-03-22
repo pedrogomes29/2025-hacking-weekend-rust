@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "rust-beginner-backend": {
+      "candid": "src/rust-beginner-backend/rust-beginner-backend.did",
+      "package": "rust-beginner-backend",
+      "type": "rust"
+    },
+    "rust-beginner-frontend": {
+      "dependencies": [
+        "rust-beginner-backend"
+      ],
+      "source": [
+        "src/rust-beginner-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "rust-beginner-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
